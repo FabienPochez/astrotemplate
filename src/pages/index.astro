@@ -4,6 +4,7 @@ import { getCanonical, getHomePermalink } from '~/utils/permalinks';
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
+import ImageCard from '~/components/widgets/ImageCard.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
@@ -22,12 +23,8 @@ const meta = {
 
 <Layout {meta}>
 	<Hero />
-	<Features />
-	<Steps />
-	<Features2 />
-	<Features3 />
+	<ImageCard />
 	<HighlightedPosts />
 	<FAQs />
-	<Stats />
 	<CallToAction />
 </Layout>
