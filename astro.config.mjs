@@ -9,7 +9,7 @@ import image from '@astrojs/image';
 import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
 
-import { remarkReadingTime } from './src/utils/frontmatter.js';
+//import { remarkReadingTime } from './src/utils/frontmatter.js';
 
 import { SITE } from './src/config.mjs';
 
