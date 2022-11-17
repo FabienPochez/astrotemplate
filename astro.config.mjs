@@ -42,10 +42,7 @@ export default defineConfig({
 		}),
 	],
 
-	markdown: {
-		remarkPlugins: [remarkReadingTime],
-		extendDefaultPlugins: true,
-	},
+
 
 	vite: {
 		resolve: {
