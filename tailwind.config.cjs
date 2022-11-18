@@ -5,10 +5,7 @@ module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
-			colors: {
-				primary: colors.blue,
-				secondary: colors.pink,
-			},
+
 			fontFamily: {
 				sans: ["'InterVariable'", ...defaultTheme.fontFamily.sans],
 			},
@@ -16,6 +13,21 @@ module.exports = {
 	},
 	// daisyUI config (optional)
 	daisyui: {
+		themes: [
+			{
+			  mytheme: {
+	 			"primary": "#ffced10",
+				"secondary": "#cbe0e5",
+			  	"accent": "#37CDBE",
+			  	"neutral": "#d0d0d0",
+			  	"base-100": "#FAFAFA",
+			  	"info": "#00B4EC",
+			  	"success": "#2fac66",
+			  	"warning": "#fcea10",
+			  	"error": "#ea592b",
+			  },
+			},
+		  ],
 		styled: true,
 		themes: true,
 		base: true,
@@ -24,6 +36,7 @@ module.exports = {
 		rtl: false,
 		prefix: "",
 		darkTheme: "dark",
+
 	},
 	plugins: [require('@tailwindcss/typography')],
 	plugins: [require("daisyui")],
